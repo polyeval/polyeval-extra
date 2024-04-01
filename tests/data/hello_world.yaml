@@ -1,0 +1,27 @@
+commonlisp: |
+  (defun p_e_entry ()
+      "Hello, World!")
+emacslisp: |
+  (defun p_e_entry ()
+      "Hello, World!")
+guilescheme: |
+  (define (p_e_entry)
+      "Hello, World!")
+haxe: |
+  static function p_e_entry(): String {
+      return "Hello, World!";
+  }
+raku: |
+  sub p_e_entry() returns Str {
+      return "Hello, World!";
+  }
+reasonml: |
+  let p_e_entry = () =>
+     "Hello, World!";
+standardml: |
+  val p_e_entry = 
+      "Hello, World!";
+visualbasic: |
+  Function p_e_entry() As String
+      Return "Hello, World!"
+  End Function

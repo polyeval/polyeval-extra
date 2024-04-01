@@ -1,0 +1,17 @@
+[project]
+name = "polyeval-extra"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "hzfsls", email = "2508342095@qq.com"},
+]
+dependencies = [
+    "polyeval @ git+https://github.com/polyeval/polyeval-base",
+]
+requires-python = ">=3.9"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"

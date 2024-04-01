@@ -1,0 +1,28 @@
+commonlisp: |
+  (defun all-above (numbers threshold)
+      (every #'(lambda (n) (> n threshold)) numbers))
+emacslisp: |
+  (defun all-above (numbers threshold)
+      (seq-every-p (lambda (n) (> n threshold)) numbers)) 
+guilescheme: |
+  (define (all-above numbers threshold)
+      (every (lambda (n) (> n threshold)) numbers))
+haxe: |
+  static function allAbove(numbers: Array<Float>, threshold: Float): Bool {
+      return numbers.foreach(n -> n > threshold);
+  }
+raku: |
+  sub all-above (Array[Rat]() $numbers, Rat $threshold) returns Bool {
+      return (True, |$numbers).reduce({ $^a and $^b > $threshold });
+  }
+reasonml: |
+  let allAbove = (numbers: list(float), threshold: float): bool => {
+      List.for_all(n => n > threshold, numbers);
+  }
+standardml: |
+  fun allAbove (numbers: real list) (threshold: real): bool =
+      List.all (fn n => n > threshold) numbers;
+visualbasic: |
+  Function AllAbove(numbers As List(Of Double), threshold As Double) As Boolean
+      Return numbers.All(Function(n) n > threshold)
+  End Function
